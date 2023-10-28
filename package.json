@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "echo pretest",
+    "posttest": "echo posttest",
+    "test": "echo Im test",
+    "cy-test": "npx cypress run -s ./cypress/e2e/assertiontest.cy.js -b chrome",
+    "cy-run": "npx cypress run"
   },
   "repository": {
     "type": "git",
